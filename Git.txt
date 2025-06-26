@@ -1,0 +1,83 @@
+以下是一些常用的 Git 指令及其注释，帮助你更好地理解和使用 Git：
+1. 配置 Git
+git config --global user.name "Your Name"
+设置全局用户名，用于提交时的作者信息。
+git config --global user.email "your_email@example.com"
+设置全局用户邮箱，用于提交时的作者信息。
+git config --list
+查看当前的 Git 配置信息。
+2. 初始化仓库
+git init
+初始化一个新的 Git 仓库，会在当前目录下创建一个 .git 文件夹。
+git clone <repository-url>
+克隆一个远程仓库到本地。
+3. 查看状态
+git status
+查看当前工作目录的状态，包括未跟踪的文件、已修改的文件等。
+git log
+查看提交历史记录。
+git log --oneline
+以简洁的单行格式显示提交历史记录。
+git log --graph
+以图形化方式显示提交历史记录，方便查看分支关系。
+4. 添加和提交
+git add <file>
+将指定文件添加到暂存区。
+git add .
+将当前目录下所有未跟踪的文件和文件夹添加到暂存区。
+git commit -m "Commit message"
+提交暂存区的内容到本地仓库，并附上提交信息。
+git commit --amend
+修改最后一次提交的信息或内容。
+5. 分支操作
+git branch
+列出所有本地分支。
+git branch <branch-name>
+创建一个新的分支。
+git checkout <branch-name>
+切换到指定的分支。
+git checkout -b <branch-name>
+创建并切换到一个新的分支。
+git branch -d <branch-name>
+删除本地分支。
+git merge <branch-name>
+将指定分支合并到当前分支。
+6. 远程操作
+git remote -v
+查看远程仓库的 URL。
+git remote add origin <repository-url>
+添加远程仓库。
+git push -u origin <branch-name>
+将本地分支推送到远程仓库，并设置跟踪信息。
+git pull origin <branch-name>
+从远程仓库拉取指定分支的内容并合并到当前分支。
+git fetch
+从远程仓库获取最新的分支信息，但不会自动合并。
+7. 冲突解决
+git status
+查看冲突文件。
+git add <conflicted-file>
+解决冲突后，将文件添加到暂存区。
+git commit
+提交冲突解决后的更改。
+8. 其他常用命令
+git stash
+暂存当前工作区的更改，以便切换分支或进行其他操作。
+git stash pop
+恢复暂存的更改。
+git reset --hard
+强制重置工作区和暂存区到最近一次提交的状态。
+git clean -fd
+删除未跟踪的文件和文件夹。
+git blame <file>
+查看文件的每一行的提交历史。
+9. 忽略文件
+创建 .gitignore 文件，列出不需要跟踪的文件或文件夹路径。例如：
+复制
+# 忽略所有 .log 文件
+*.log
+# 忽略某个特定文件夹
+build/
+10. 查看帮助
+git help <command>
+查看指定命令的帮助文档。
