@@ -30,3 +30,7 @@ git push origin v1.0
 (如果要一次性把本地所有没推的标签全推上去，可以用 git push origin --tags)
 
 推上去之后，你在 GitHub 网页端的 "Tags" 或 "Releases" 界面，就能看到这个版本了，随时可以打包下载 ZIP 源码。
+
+查看历史推送版本
+git log --oneline --all --graph
+
