@@ -34,3 +34,10 @@ git push origin v1.0
 查看历史推送版本
 git log --oneline --all --graph
 
+
+场景	命令
+还没 add，想看改了啥	git diff
+已经 add，想看准备提交啥	git diff --cached
+想看最后一次提交的内容	git show
+想看某文件的历史改动详情	git log -p <file>
+想看每一行是谁写的	git blame <file>
